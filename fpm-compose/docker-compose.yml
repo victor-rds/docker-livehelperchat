@@ -9,6 +9,7 @@ services:
     image: victorrds/livehelperchat:fpm
     build: ../fpm/
     volumes:
+      - www-data:/var/www/html
       - ./livehelperchat/cache:/var/www/html/cache
       - ./livehelperchat/var:/var/www/html/var
       - ./livehelperchat/settings:/var/www/html/settings
